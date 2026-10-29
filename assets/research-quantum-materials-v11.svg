@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="900" viewBox="0 0 1200 900" role="img" aria-labelledby="title description">
+  <title id="title">Twisted hexagonal lattices and their moiré potential</title>
+  <description id="description">Two fine, equal and mathematically regular honeycomb lattices are rotated by six degrees relative to one another. Blue-cyan and coral layers overlap naturally while a subtle triangular array of soft halos marks the periodic extrema of the resulting moiré potential.</description>
+  <defs>
+    <radialGradient id="background" cx="50%" cy="46%" r="76%">
+      <stop offset="0%" stop-color="#fbfdff"/>
+      <stop offset="50%" stop-color="#f2f9fc"/>
+      <stop offset="100%" stop-color="#e5f1f6"/>
+    </radialGradient>
+    <radialGradient id="blue-halo" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#8fd9ec" stop-opacity=".20"/>
+      <stop offset="100%" stop-color="#8fd9ec" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="coral-halo" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ffb09d" stop-opacity=".16"/>
+      <stop offset="100%" stop-color="#ffb09d" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="moire-potential-halo" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity=".98"/>
+      <stop offset="20%" stop-color="#e8fbff" stop-opacity=".82"/>
+      <stop offset="46%" stop-color="#91ddf2" stop-opacity=".36"/>
+      <stop offset="72%" stop-color="#9b8ee8" stop-opacity=".14"/>
+      <stop offset="100%" stop-color="#7194df" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="blue-lattice" gradientUnits="userSpaceOnUse" x1="170" y1="120" x2="1030" y2="790">
+      <stop offset="0%" stop-color="#174bb8"/>
+      <stop offset="50%" stop-color="#116ecb"/>
+      <stop offset="100%" stop-color="#14a0b1"/>
+    </linearGradient>
+    <linearGradient id="coral-lattice" gradientUnits="userSpaceOnUse" x1="1040" y1="130" x2="160" y2="790">
+      <stop offset="0%" stop-color="#f39a43"/>
+      <stop offset="48%" stop-color="#ef624b"/>
+      <stop offset="100%" stop-color="#de476b"/>
+    </linearGradient>
+    <radialGradient id="lattice-fade" cx="50%" cy="49%" r="54%" gradientTransform="translate(0 .03) scale(1 1.18)">
+      <stop offset="0%" stop-color="white"/>
+      <stop offset="62%" stop-color="white" stop-opacity=".99"/>
+      <stop offset="83%" stop-color="white" stop-opacity=".56"/>
+      <stop offset="100%" stop-color="black"/>
+    </radialGradient>
+    <mask id="lattice-window" maskUnits="userSpaceOnUse">
+      <rect width="1200" height="900" fill="url(#lattice-fade)"/>
+    </mask>
+    <pattern id="honeycomb-lines" width="27.713" height="48.000" patternUnits="userSpaceOnUse">
+      <path d="M 13.856 0 V 8.000 M 13.856 8.000 L 0 16.000 M 13.856 8.000 L 27.713 16.000 M 0 16.000 V 32.000 M 0 32.000 L 13.856 40.000 M 27.713 32.000 L 13.856 40.000 M 13.856 40.000 V 48.000" fill="none" stroke="white" stroke-width="2.05" stroke-linecap="round" stroke-linejoin="round"/>
+    </pattern>
+    <mask id="honeycomb-mask" x="-260" y="-260" width="1720" height="1420" maskUnits="userSpaceOnUse">
+      <rect x="-260" y="-260" width="1720" height="1420" fill="url(#honeycomb-lines)"/>
+    </mask>
+  </defs>
+  <rect width="1200" height="900" fill="url(#background)"/>
+  <ellipse cx="425" cy="350" rx="470" ry="365" fill="url(#blue-halo)"/>
+  <ellipse cx="800" cy="555" rx="450" ry="350" fill="url(#coral-halo)"/>
+  <g mask="url(#lattice-window)" opacity=".96" style="mix-blend-mode:screen">
+    <circle cx="1058.58" cy="979.52" r="111.20" fill="url(#moire-potential-halo)"/>
+    <circle cx="1287.86" cy="847.14" r="111.20" fill="url(#moire-potential-halo)"/>
+    <circle cx="600.00" cy="979.52" r="111.20" fill="url(#moire-potential-halo)"/>
+    <circle cx="829.29" cy="847.14" r="111.20" fill="url(#moire-potential-halo)"/>
+    <circle cx="1058.58" cy="714.76" r="111.20" fill="url(#moire-potential-halo)"/>
+    <circle cx="1287.86" cy="582.38" r="111.20" fill="url(#moire-potential-halo)"/>
+    <circle cx="141.42" cy="979.52" r="111.20" fill="url(#moire-potential-halo)"/>
+    <circle cx="370.71" cy="847.14" r="111.20" fill="url(#moire-potential-halo)"/>
+    <circle cx="600.00" cy="714.76" r="111.20" fill="url(#moire-potential-halo)"/>
+    <circle cx="829.29" cy="582.38" r="111.20" fill="url(#moire-potential-halo)"/>
+    <circle cx="1058.58" cy="450.00" r="111.20" fill="url(#moire-potential-halo)"/>
+    <circle cx="1287.86" cy="317.62" r="111.20" fill="url(#moire-potential-halo)"/>
+    <circle cx="-87.86" cy="847.14" r="111.20" fill="url(#moire-potential-halo)"/>
+    <circle cx="141.42" cy="714.76" r="111.20" fill="url(#moire-potential-halo)"/>
+    <circle cx="370.71" cy="582.38" r="111.20" fill="url(#moire-potential-halo)"/>
+    <circle cx="600.00" cy="450.00" r="111.20" fill="url(#moire-potential-halo)"/>
+    <circle cx="829.29" cy="317.62" r="111.20" fill="url(#moire-potential-halo)"/>
+    <circle cx="1058.58" cy="185.24" r="111.20" fill="url(#moire-potential-halo)"/>
+    <circle cx="1287.86" cy="52.86" r="111.20" fill="url(#moire-potential-halo)"/>
+    <circle cx="-87.86" cy="582.38" r="111.20" fill="url(#moire-potential-halo)"/>
+    <circle cx="141.42" cy="450.00" r="111.20" fill="url(#moire-potential-halo)"/>
+    <circle cx="370.71" cy="317.62" r="111.20" fill="url(#moire-potential-halo)"/>
+    <circle cx="600.00" cy="185.24" r="111.20" fill="url(#moire-potential-halo)"/>
+    <circle cx="829.29" cy="52.86" r="111.20" fill="url(#moire-potential-halo)"/>
+    <circle cx="1058.58" cy="-79.52" r="111.20" fill="url(#moire-potential-halo)"/>
+    <circle cx="-87.86" cy="317.62" r="111.20" fill="url(#moire-potential-halo)"/>
+    <circle cx="141.42" cy="185.24" r="111.20" fill="url(#moire-potential-halo)"/>
+    <circle cx="370.71" cy="52.86" r="111.20" fill="url(#moire-potential-halo)"/>
+    <circle cx="600.00" cy="-79.52" r="111.20" fill="url(#moire-potential-halo)"/>
+    <circle cx="-87.86" cy="52.86" r="111.20" fill="url(#moire-potential-halo)"/>
+    <circle cx="141.42" cy="-79.52" r="111.20" fill="url(#moire-potential-halo)"/>
+  </g>
+  <g mask="url(#lattice-window)">
+    <g opacity="0.86" transform="rotate(-3 600 450)">
+      <rect x="-260" y="-260" width="1720" height="1420" fill="url(#blue-lattice)" mask="url(#honeycomb-mask)"/>
+    </g>
+    <g opacity="0.80" transform="rotate(3 600 450)" style="mix-blend-mode:multiply">
+      <rect x="-260" y="-260" width="1720" height="1420" fill="url(#coral-lattice)" mask="url(#honeycomb-mask)"/>
+    </g>
+  </g>
+</svg>
