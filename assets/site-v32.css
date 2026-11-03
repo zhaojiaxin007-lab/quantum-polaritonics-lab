@@ -574,3 +574,54 @@ body::before { content: none !important; display: none !important; }
   height: 100%;
   object-fit: cover;
 }
+
+
+/* Homepage hero: a restrained 3D presentation for the integrated photonics visual. */
+@media (min-width: 1241px) {
+  .platform-diagram {
+    justify-self: center;
+    width: 94%;
+    max-width: 700px;
+    transform: perspective(1500px) rotateY(-5deg) rotateX(1deg) rotateZ(-1deg) scale(.97);
+    transform-origin: center center;
+    border-color: rgba(49, 115, 163, .38);
+    box-shadow: 0 22px 58px rgba(16, 49, 78, .18), 0 2px 8px rgba(16, 49, 78, .08);
+    transition: transform .35s ease, box-shadow .35s ease;
+  }
+  .platform-diagram::before {
+    width: 78%;
+    height: 78%;
+    right: -3%;
+    bottom: -5%;
+    background: linear-gradient(135deg, rgba(85,184,200,.22), rgba(11,79,138,.08));
+  }
+  .platform-diagram:hover {
+    transform: perspective(1500px) rotateY(-3deg) rotateX(.5deg) rotateZ(-.6deg) scale(.98) translateY(-3px);
+    box-shadow: 0 28px 64px rgba(16, 49, 78, .2), 0 3px 10px rgba(16, 49, 78, .08);
+  }
+}
+
+@media (min-width: 761px) and (max-width: 1240px) {
+  .platform-diagram {
+    justify-self: center;
+    width: 96%;
+    transform: rotateZ(-.7deg) scale(.98);
+    transform-origin: center center;
+    border-color: rgba(49, 115, 163, .34);
+    box-shadow: 0 16px 42px rgba(16, 49, 78, .15);
+  }
+  .platform-diagram::before {
+    width: 76%;
+    height: 76%;
+    right: -2%;
+    bottom: -4%;
+    background: linear-gradient(135deg, rgba(85,184,200,.18), rgba(11,79,138,.06));
+  }
+}
+
+@media (max-width: 760px) {
+  .platform-diagram {
+    width: 100%;
+    transform: none;
+  }
+}
